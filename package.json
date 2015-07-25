@@ -1,0 +1,18 @@
+{
+  "name": "backstop-starter-kit",
+  "version": "0.0.1",
+  "description": "BackStopJSスターターキット",
+  "main": "",
+  "scripts": {
+    "ready": "npm i -g gulp && npm i -g phantomjs && npm i -g casperjs && npm i",
+    "config": "cd ./node_modules/backstopjs && gulp genConfig",
+    "test": "cd ./node_modules/backstopjs && gulp test",
+    "ref": "cd ./node_modules/backstopjs && gulp reference"
+  },
+  "author": "frontainer",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "backstopjs": "^0.5.1"
+  }
+}
