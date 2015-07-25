@@ -1,18 +1,21 @@
 {
   "name": "backstop-starter-kit",
-  "version": "0.0.1",
-  "description": "BackStopJSスターターキット",
+  "version": "0.0.2",
+  "description": "BackStopJSのスターターキット",
   "main": "",
   "scripts": {
     "ready": "npm i -g gulp && npm i -g phantomjs && npm i -g casperjs && npm i",
     "config": "cd ./node_modules/backstopjs && gulp genConfig",
     "test": "cd ./node_modules/backstopjs && gulp test",
-    "ref": "cd ./node_modules/backstopjs && gulp reference"
+    "ref": "node ./lib/reference.js",
+    "report": "cd ./node_modules/backstopjs && gulp report",
+    "restore": "node ./lib/restore.js"
   },
   "author": "frontainer",
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "backstopjs": "^0.5.1"
+    "backstopjs": "^0.5.1",
+    "fs-extra": "^0.22.1"
   }
 }
